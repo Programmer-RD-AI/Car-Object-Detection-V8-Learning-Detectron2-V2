@@ -1,0 +1,590 @@
+2021-10-18 09:00:22,605 INFO    MainThread:87199 [internal.py:wandb_internal():62] W&B internal server running at pid: 87199
+2021-10-18 09:00:22,606 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:00:22,606 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: login
+2021-10-18 09:00:22,608 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:00:22,614 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:00:23,141 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:00:23,144 INFO    SenderThread:87199 [sender.py:send_request_login():135] Login server info: {'cliVersionInfo': {'min_cli_version': '0.8.20', 'max_cli_version': '0.12.4'}}
+2021-10-18 09:00:23,151 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: header
+2021-10-18 09:00:23,151 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:00:23,151 INFO    WriterThread:87199 [datastore.py:open_for_write():76] open: wandb/run-20211018_090022-28y1uij2/run-28y1uij2.wandb
+2021-10-18 09:00:23,152 DEBUG   SenderThread:87199 [sender.py:send():89] send: header
+2021-10-18 09:00:23,152 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: check_version
+2021-10-18 09:00:23,155 DEBUG   HandlerThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): pypi.org:443
+2021-10-18 09:00:23,431 DEBUG   HandlerThread:87199 [connectionpool.py:_make_request():452] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 60763
+2021-10-18 09:00:23,597 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: run
+2021-10-18 09:00:23,598 DEBUG   SenderThread:87199 [sender.py:send():89] send: run
+2021-10-18 09:00:23,600 DEBUG   SenderThread:87199 [git.py:repo():30] git repository is invalid
+2021-10-18 09:00:23,604 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:00:24,121 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:00:24,125 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:00:24,125 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: run_start
+2021-10-18 09:00:24,126 INFO    SenderThread:87199 [dir_watcher.py:__init__():149] watching files in: wandb/run-20211018_090022-28y1uij2/files
+2021-10-18 09:00:24,127 INFO    SenderThread:87199 [sender.py:send_run():414] run started: 28y1uij2 with start time 1634527823
+2021-10-18 09:00:24,135 DEBUG   HandlerThread:87199 [git.py:repo():30] git repository is invalid
+2021-10-18 09:00:24,263 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: files
+2021-10-18 09:00:24,264 DEBUG   SenderThread:87199 [sender.py:send():89] send: files
+2021-10-18 09:00:24,264 INFO    SenderThread:87199 [sender.py:_save_file():495] saving file wandb-metadata.json with policy now
+2021-10-18 09:00:24,267 DEBUG   Thread-10 :87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:00:24,269 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:00:24,269 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:00:24,269 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:00:24,275 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:00:24,761 DEBUG   Thread-10 :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:00:24,765 DEBUG   Thread-10 :87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-10-18 09:00:24,776 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:00:25,128 INFO    Thread-7  :87199 [dir_watcher.py:_on_file_created():188] file/dir created: wandb/run-20211018_090022-28y1uij2/files/wandb-metadata.json
+2021-10-18 09:00:25,128 INFO    Thread-7  :87199 [dir_watcher.py:_on_file_created():188] file/dir created: wandb/run-20211018_090022-28y1uij2/files/requirements.txt
+2021-10-18 09:00:25,129 INFO    Thread-7  :87199 [dir_watcher.py:_on_file_created():188] file/dir created: wandb/run-20211018_090022-28y1uij2/files/output.log
+2021-10-18 09:00:25,480 DEBUG   Thread-10 :87199 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/wandb-metadata.json?Expires=1634614224&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=IpbdkVNZt%2Fv8iNy0eGziHmTxm3I%2FQiS0XbFZFcyYuIjZe4YxMziaDr5ZTJGFWsR1akJD55vjcWmIcR%2BvKHW2alwKIlVrmU%2FqLfJtNFahqDDrn1U8SuvprDYTnIFj3QNk3B8ULjhHk%2BXwg9L8HPl4U%2B15NwsQY9vofZCDgTee3%2BK%2FcE4a8fR3pXNCczV%2FgpLJUwyjpUNCUmJqayTmssNIog8lP5Aq1ubbeD0BjF5Gxl04V5tYn8aDCsCeQ4iDtWnwp4N4BhM%2FxqEuvwpWLeMOKjREtEmUlO7gBSCgqANlkoqhWBsPxq4ziGS6bWPPVJAu7f4vo1%2FXE2pyQfRiqmH54w%3D%3D HTTP/1.1" 200 0
+2021-10-18 09:00:25,482 INFO    Thread-10 :87199 [upload_job.py:push():112] Uploaded file /tmp/tmp2reth8sawandb/2edkkis3-wandb-metadata.json
+2021-10-18 09:00:27,445 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:27,446 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:27,449 DEBUG   Thread-4  :87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:00:27,450 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:27,450 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:27,505 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: stats
+2021-10-18 09:00:27,505 DEBUG   SenderThread:87199 [sender.py:send():89] send: stats
+2021-10-18 09:00:27,549 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:27,550 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:27,652 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:27,653 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:27,760 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:27,760 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:27,862 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:27,862 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:27,964 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:27,964 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:28,066 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:28,066 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:28,071 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:00:28,128 INFO    Thread-7  :87199 [dir_watcher.py:_on_file_modified():201] file/dir modified: wandb/run-20211018_090022-28y1uij2/files/output.log
+2021-10-18 09:00:28,169 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:28,169 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:28,271 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:28,271 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:28,371 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:28,371 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:28,472 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:28,473 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:28,573 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:28,574 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:28,676 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:28,676 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:28,780 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:28,780 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:28,884 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:28,884 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:28,984 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:28,984 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:29,085 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:29,085 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:29,121 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:29,122 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:29,122 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:29,122 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:29,122 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:29,123 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:29,125 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:29,126 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:29,128 INFO    Thread-7  :87199 [dir_watcher.py:_on_file_modified():201] file/dir modified: wandb/run-20211018_090022-28y1uij2/files/output.log
+2021-10-18 09:00:29,143 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:29,143 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:29,144 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:29,144 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:29,147 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:29,147 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:29,148 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:29,150 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:29,156 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:00:29,156 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:00:29,297 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:00:29,297 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: pause
+2021-10-18 09:00:29,297 INFO    HandlerThread:87199 [handler.py:handle_request_pause():229] stopping system metrics thread
+2021-10-18 09:00:29,329 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: stats
+2021-10-18 09:00:29,329 DEBUG   SenderThread:87199 [sender.py:send():89] send: stats
+2021-10-18 09:00:30,129 INFO    Thread-7  :87199 [dir_watcher.py:_on_file_modified():201] file/dir modified: wandb/run-20211018_090022-28y1uij2/files/output.log
+2021-10-18 09:00:31,701 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:00:39,779 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:00:39,779 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:00:39,779 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:00:39,783 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:00:40,260 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:00:55,263 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:00:55,263 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:00:55,263 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:00:55,268 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:00:55,913 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:01:02,036 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:01:10,915 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:01:10,916 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:01:10,916 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:01:10,919 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:01:11,406 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:01:26,409 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:01:26,409 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:01:26,409 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:01:26,412 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:01:26,931 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:01:34,471 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:01:41,933 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:01:41,934 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:01:41,934 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:01:41,938 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:01:42,489 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:01:57,492 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:01:57,492 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:01:57,492 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:01:57,495 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:01:58,008 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:02:12,702 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:02:13,011 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:02:13,011 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:02:13,011 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:02:13,014 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:02:14,482 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:02:29,485 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:02:29,485 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:02:29,485 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:02:29,490 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:02:30,069 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:02:42,997 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:02:45,072 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:02:45,073 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:02:45,073 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:02:45,076 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:02:45,586 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:03:00,589 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:03:00,589 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:03:00,590 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:03:00,593 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:03:01,263 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:03:13,306 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:03:16,265 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:03:16,266 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:03:16,266 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:03:16,269 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:03:16,754 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:03:31,758 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:03:31,758 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:03:31,758 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:03:31,763 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:03:32,237 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:03:43,607 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:03:47,240 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:03:47,240 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:03:47,240 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:03:47,244 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:03:47,732 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:04:02,735 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:02,736 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:04:02,736 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:04:02,739 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:04:03,189 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:04:13,913 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:04:18,194 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:18,194 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:04:18,194 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:04:18,199 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:04:18,700 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:04:31,390 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:31,390 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: resume
+2021-10-18 09:04:31,390 INFO    HandlerThread:87199 [handler.py:handle_request_resume():224] starting system metrics thread
+2021-10-18 09:04:31,391 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:31,391 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: pause
+2021-10-18 09:04:31,391 INFO    HandlerThread:87199 [handler.py:handle_request_pause():229] stopping system metrics thread
+2021-10-18 09:04:31,416 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: stats
+2021-10-18 09:04:31,416 DEBUG   SenderThread:87199 [sender.py:send():89] send: stats
+2021-10-18 09:04:31,737 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:04:33,703 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:33,703 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:04:33,703 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:04:33,707 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:04:34,216 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:04:34,589 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:34,589 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: resume
+2021-10-18 09:04:34,589 INFO    HandlerThread:87199 [handler.py:handle_request_resume():224] starting system metrics thread
+2021-10-18 09:04:34,729 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:34,729 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:34,729 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:34,729 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:34,780 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:34,780 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:34,781 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:34,781 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:34,832 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:34,832 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:34,833 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:34,833 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:34,884 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:34,884 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:34,885 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:34,885 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:34,935 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:34,936 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:34,936 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:34,936 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:34,987 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:34,987 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:34,987 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:34,988 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,038 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,038 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,038 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,039 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,089 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,089 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,090 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,090 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,140 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,140 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,141 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,141 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,191 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,191 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,192 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,192 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,242 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,242 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,242 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,243 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,293 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,293 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,293 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,293 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,344 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,344 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,344 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,344 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,395 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,395 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,395 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,396 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,446 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,446 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,447 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,447 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,497 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,498 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,498 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,498 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,549 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,549 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,549 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,549 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,600 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,600 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,600 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,600 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,651 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,651 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,652 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,652 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,702 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,702 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,703 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,703 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,753 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,753 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,754 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,754 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,804 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,805 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,805 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,805 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,855 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,856 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,856 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,856 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,907 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,907 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,907 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,907 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,958 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,958 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:35,959 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:35,959 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,010 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,010 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,010 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,010 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,061 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,061 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,062 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,062 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,112 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,113 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,113 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,113 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,164 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,164 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,164 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,165 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,215 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,215 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,216 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,216 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,266 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,266 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,267 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,267 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,317 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,318 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,318 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,318 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,368 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,368 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,369 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,369 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,419 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,420 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,420 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,420 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,471 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,471 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,471 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,472 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,522 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,522 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,522 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,523 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,573 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,573 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,573 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,574 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,624 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,625 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,625 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,625 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,676 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,676 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,676 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,677 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,717 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,717 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:36,717 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,717 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:36,819 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:36,819 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: pause
+2021-10-18 09:04:36,819 INFO    HandlerThread:87199 [handler.py:handle_request_pause():229] stopping system metrics thread
+2021-10-18 09:04:36,845 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: stats
+2021-10-18 09:04:36,846 DEBUG   SenderThread:87199 [sender.py:send():89] send: stats
+2021-10-18 09:04:47,154 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:04:49,219 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:49,220 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:04:49,220 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:04:49,224 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:04:49,649 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:04:54,011 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:54,011 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: resume
+2021-10-18 09:04:54,011 INFO    HandlerThread:87199 [handler.py:handle_request_resume():224] starting system metrics thread
+2021-10-18 09:04:54,107 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:54,107 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:54,107 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:54,108 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:54,209 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:54,209 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: pause
+2021-10-18 09:04:54,209 INFO    HandlerThread:87199 [handler.py:handle_request_pause():229] stopping system metrics thread
+2021-10-18 09:04:54,211 INFO    Thread-7  :87199 [dir_watcher.py:_on_file_modified():201] file/dir modified: wandb/run-20211018_090022-28y1uij2/files/output.log
+2021-10-18 09:04:54,239 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: stats
+2021-10-18 09:04:54,240 DEBUG   SenderThread:87199 [sender.py:send():89] send: stats
+2021-10-18 09:04:57,695 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:57,695 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: resume
+2021-10-18 09:04:57,695 INFO    HandlerThread:87199 [handler.py:handle_request_resume():224] starting system metrics thread
+2021-10-18 09:04:57,832 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:57,832 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:57,833 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:57,833 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:57,883 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:57,884 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:57,884 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:57,884 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:57,935 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:57,936 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:57,936 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:57,936 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:57,986 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:57,987 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:57,987 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:57,987 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:58,038 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:58,038 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:58,038 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:58,039 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:58,089 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:58,089 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:58,090 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:58,090 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:58,098 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:58,099 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:58,099 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:58,099 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:58,200 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:58,201 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: pause
+2021-10-18 09:04:58,201 INFO    HandlerThread:87199 [handler.py:handle_request_pause():229] stopping system metrics thread
+2021-10-18 09:04:58,223 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: stats
+2021-10-18 09:04:58,223 DEBUG   SenderThread:87199 [sender.py:send():89] send: stats
+2021-10-18 09:04:58,853 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:58,853 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: resume
+2021-10-18 09:04:58,853 INFO    HandlerThread:87199 [handler.py:handle_request_resume():224] starting system metrics thread
+2021-10-18 09:04:58,951 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:58,951 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:58,952 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: output
+2021-10-18 09:04:58,952 DEBUG   SenderThread:87199 [sender.py:send():89] send: output
+2021-10-18 09:04:59,017 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:04:59,054 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:04:59,054 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: pause
+2021-10-18 09:04:59,054 INFO    HandlerThread:87199 [handler.py:handle_request_pause():229] stopping system metrics thread
+2021-10-18 09:04:59,078 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: stats
+2021-10-18 09:04:59,078 DEBUG   SenderThread:87199 [sender.py:send():89] send: stats
+2021-10-18 09:04:59,212 INFO    Thread-7  :87199 [dir_watcher.py:_on_file_modified():201] file/dir modified: wandb/run-20211018_090022-28y1uij2/files/output.log
+2021-10-18 09:05:04,652 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:05:04,652 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:05:04,652 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:05:04,655 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:05:05,120 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:05:09,407 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:05:20,122 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:05:20,123 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:05:20,123 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:05:20,127 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:05:20,663 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:05:35,666 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:05:35,666 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:05:35,666 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:05:35,670 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:05:36,140 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:05:51,142 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:05:51,142 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:05:51,142 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:05:51,147 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:05:51,578 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:05:59,708 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:06:06,581 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:06,581 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:06:06,581 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:06,586 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:06:07,042 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:06:22,045 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:22,046 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: status
+2021-10-18 09:06:22,046 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:22,050 DEBUG   SenderThread:87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:06:22,507 DEBUG   SenderThread:87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:06:25,128 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:25,128 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: resume
+2021-10-18 09:06:25,128 INFO    HandlerThread:87199 [handler.py:handle_request_resume():224] starting system metrics thread
+2021-10-18 09:06:25,135 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: exit
+2021-10-18 09:06:25,135 DEBUG   SenderThread:87199 [sender.py:send():89] send: exit
+2021-10-18 09:06:25,135 INFO    SenderThread:87199 [sender.py:send_exit():147] handling exit code: 0
+2021-10-18 09:06:25,135 INFO    SenderThread:87199 [sender.py:send_exit():155] send defer
+2021-10-18 09:06:25,136 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:25,136 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: poll_exit
+2021-10-18 09:06:25,136 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:25,136 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:25,136 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: defer
+2021-10-18 09:06:25,136 INFO    HandlerThread:87199 [handler.py:handle_request_defer():70] handle defer: 0
+2021-10-18 09:06:25,136 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:25,137 INFO    SenderThread:87199 [sender.py:send_request_defer():164] handle sender defer: 0
+2021-10-18 09:06:25,137 INFO    SenderThread:87199 [sender.py:send_request_defer():200] send defer: 1
+2021-10-18 09:06:25,137 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:25,137 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: defer
+2021-10-18 09:06:25,137 INFO    HandlerThread:87199 [handler.py:handle_request_defer():70] handle defer: 1
+2021-10-18 09:06:25,158 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: stats
+2021-10-18 09:06:25,159 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:25,159 INFO    SenderThread:87199 [sender.py:send_request_defer():164] handle sender defer: 1
+2021-10-18 09:06:25,159 INFO    SenderThread:87199 [sender.py:send_request_defer():200] send defer: 2
+2021-10-18 09:06:25,159 DEBUG   SenderThread:87199 [sender.py:send():89] send: stats
+2021-10-18 09:06:25,160 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:25,162 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: defer
+2021-10-18 09:06:25,162 INFO    HandlerThread:87199 [handler.py:handle_request_defer():70] handle defer: 2
+2021-10-18 09:06:25,162 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:25,162 INFO    SenderThread:87199 [sender.py:send_request_defer():164] handle sender defer: 2
+2021-10-18 09:06:25,162 INFO    SenderThread:87199 [sender.py:send_request_defer():200] send defer: 3
+2021-10-18 09:06:25,163 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:25,163 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: defer
+2021-10-18 09:06:25,163 INFO    HandlerThread:87199 [handler.py:handle_request_defer():70] handle defer: 3
+2021-10-18 09:06:25,163 DEBUG   SenderThread:87199 [sender.py:send():89] send: summary
+2021-10-18 09:06:25,163 INFO    SenderThread:87199 [sender.py:_save_file():495] saving file wandb-summary.json with policy end
+2021-10-18 09:06:25,163 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:25,164 INFO    SenderThread:87199 [sender.py:send_request_defer():164] handle sender defer: 3
+2021-10-18 09:06:25,164 INFO    SenderThread:87199 [sender.py:send_request_defer():200] send defer: 4
+2021-10-18 09:06:25,164 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:25,164 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: defer
+2021-10-18 09:06:25,164 INFO    HandlerThread:87199 [handler.py:handle_request_defer():70] handle defer: 4
+2021-10-18 09:06:25,164 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:25,164 INFO    SenderThread:87199 [sender.py:send_request_defer():164] handle sender defer: 4
+2021-10-18 09:06:25,164 INFO    SenderThread:87199 [dir_watcher.py:finish():253] shutting down directory watcher
+2021-10-18 09:06:25,224 INFO    SenderThread:87199 [dir_watcher.py:finish():282] scan: wandb/run-20211018_090022-28y1uij2/files
+2021-10-18 09:06:25,224 INFO    SenderThread:87199 [dir_watcher.py:finish():288] scan save: wandb/run-20211018_090022-28y1uij2/files/config.yaml config.yaml
+2021-10-18 09:06:25,225 INFO    SenderThread:87199 [dir_watcher.py:finish():288] scan save: wandb/run-20211018_090022-28y1uij2/files/output.log output.log
+2021-10-18 09:06:25,225 INFO    SenderThread:87199 [dir_watcher.py:finish():288] scan save: wandb/run-20211018_090022-28y1uij2/files/wandb-summary.json wandb-summary.json
+2021-10-18 09:06:25,229 INFO    SenderThread:87199 [dir_watcher.py:finish():288] scan save: wandb/run-20211018_090022-28y1uij2/files/wandb-metadata.json wandb-metadata.json
+2021-10-18 09:06:25,229 INFO    SenderThread:87199 [dir_watcher.py:finish():288] scan save: wandb/run-20211018_090022-28y1uij2/files/requirements.txt requirements.txt
+2021-10-18 09:06:25,229 DEBUG   Thread-17 :87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:06:25,236 INFO    SenderThread:87199 [sender.py:send_request_defer():200] send defer: 5
+2021-10-18 09:06:25,237 DEBUG   Thread-18 :87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:06:25,237 DEBUG   Thread-19 :87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:06:25,237 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:25,242 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: defer
+2021-10-18 09:06:25,242 INFO    HandlerThread:87199 [handler.py:handle_request_defer():70] handle defer: 5
+2021-10-18 09:06:25,242 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:25,242 INFO    SenderThread:87199 [sender.py:send_request_defer():164] handle sender defer: 5
+2021-10-18 09:06:25,242 INFO    SenderThread:87199 [file_pusher.py:finish():139] shutting down file pusher
+2021-10-18 09:06:25,242 DEBUG   Thread-20 :87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-10-18 09:06:25,242 INFO    SenderThread:87199 [sender.py:send_request_defer():200] send defer: 6
+2021-10-18 09:06:25,243 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:25,243 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: defer
+2021-10-18 09:06:25,243 INFO    HandlerThread:87199 [handler.py:handle_request_defer():70] handle defer: 6
+2021-10-18 09:06:25,243 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:25,243 INFO    SenderThread:87199 [sender.py:send_request_defer():164] handle sender defer: 6
+2021-10-18 09:06:25,678 DEBUG   Thread-17 :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:06:25,684 DEBUG   Thread-17 :87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-10-18 09:06:25,708 DEBUG   Thread-20 :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:06:25,714 DEBUG   Thread-20 :87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-10-18 09:06:25,738 DEBUG   Thread-19 :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:06:25,739 DEBUG   Thread-18 :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-10-18 09:06:25,746 DEBUG   Thread-19 :87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-10-18 09:06:25,749 DEBUG   Thread-18 :87199 [connectionpool.py:_new_conn():971] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-10-18 09:06:25,823 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:06:26,127 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:06:26,429 DEBUG   Thread-19 :87199 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/wandb-summary.json?Expires=1634614585&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=vGe3YKQQvjhlzMPIwVgPzEHnOc8t%2FWzlo0jpa4VaPGv7e93s%2FEE2%2F3iijB4ykdb7u7yJtZooW1r69eQxJPtqg35pEVpboxGfOJByxTRYRzLuUs%2FpPu58PM3FYwKn6uBMV00WoKWAA1oO0q0V9Aph9dijQ%2FmNkKvaf99ACw6WZAaP5wrDN7ZMNCiLm4EI%2BLHs%2BphUoPTQociQERoQ%2BR6JZORehvjNKExGAt4vdStNZ5QW2bcz4Hh1vDfanNO2fUNEHxVaP6qgMuqbjLkkKwbBdQmfg8PnXJ3Dsabl%2BVmGRmbHJI011eMUtxUMOtw5U6MYF%2Bd39T5xS%2Fh7qo2qiNhS8A%3D%3D HTTP/1.1" 200 0
+2021-10-18 09:06:26,429 DEBUG   Thread-20 :87199 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/requirements.txt?Expires=1634614585&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=gkIaB%2BdpA70022VmlbxsNXA3r8gbMJloohCH1VDJaTh99Her15E4tPDRjMZSEZFSaNSvN8LgF4HA2IXZ7URDW7dTpTQfqM80RFMAe96xhqhAWvN8p%2BhZhGixkHgudh7vHAmi7juNxWlwQT485RlBorauqKUENdG3%2FuBYuc3gYKLoO9gZNeS60DE3c1gMF7vSpvzfkG%2Bfqr0UWN%2BYyoZve1pperZF5b1BQskEuBhAlhDCgKzKp7ZR9bzDhrV9hSAB1l9mZJjdhn73QB8qdpCQoZMREUDwCRmwQKdv5NvMA0hhTGh3APWLKw7ClQvGVH%2B9XzXSNmOVhPICvjXTMmNxCA%3D%3D HTTP/1.1" 200 0
+2021-10-18 09:06:26,430 INFO    Thread-19 :87199 [upload_job.py:push():112] Uploaded file wandb/run-20211018_090022-28y1uij2/files/wandb-summary.json
+2021-10-18 09:06:26,431 INFO    Thread-20 :87199 [upload_job.py:push():112] Uploaded file wandb/run-20211018_090022-28y1uij2/files/requirements.txt
+2021-10-18 09:06:26,452 DEBUG   Thread-4  :87199 [connectionpool.py:_make_request():452] https://api.wandb.ai:443 "POST /files/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/file_stream HTTP/1.1" 200 None
+2021-10-18 09:06:26,454 INFO    SenderThread:87199 [sender.py:send_request_defer():200] send defer: 7
+2021-10-18 09:06:26,454 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:26,454 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: defer
+2021-10-18 09:06:26,454 INFO    HandlerThread:87199 [handler.py:handle_request_defer():70] handle defer: 7
+2021-10-18 09:06:26,455 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:26,455 INFO    SenderThread:87199 [sender.py:send_request_defer():164] handle sender defer: 7
+2021-10-18 09:06:26,455 INFO    SenderThread:87199 [sender.py:send_request_defer():200] send defer: 8
+2021-10-18 09:06:26,455 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: final
+2021-10-18 09:06:26,455 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: footer
+2021-10-18 09:06:26,456 DEBUG   SenderThread:87199 [sender.py:send():89] send: final
+2021-10-18 09:06:26,456 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:26,456 DEBUG   SenderThread:87199 [sender.py:send():89] send: footer
+2021-10-18 09:06:26,456 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: defer
+2021-10-18 09:06:26,456 INFO    HandlerThread:87199 [handler.py:handle_request_defer():70] handle defer: 8
+2021-10-18 09:06:26,456 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:26,456 INFO    SenderThread:87199 [sender.py:send_request_defer():164] handle sender defer: 8
+2021-10-18 09:06:26,469 DEBUG   Thread-17 :87199 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/config.yaml?Expires=1634614585&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=aHdyRvvY%2BjD8E5IaJqKV%2FqrmPrCC7%2FAtN%2FA%2FHL2Andnf163TPBNRnt4u3Pku33zvcVEByX4tJYcXZKZIpQLuy50S3oHrBsAMdnWOW%2BPKYh%2FNDVrXCeFsVoC7HFWWMW%2Bdhwew0qSsvJ0UwrnzL7hCrx0Vz7pYKlA6D9Dxfi5e%2F%2BMyqfa8Sbs3B6qdgvWwFI2zgRVXXnTKHW0pHzhHpQ1aABJorPAlw9k9b1lW5TlkOLYSZ2AJNYWoI77bY%2BS9sKZxc%2FnMMtd%2FOrH8qqj%2Bz9GCmHLObkoBlbrqI8YdmXmypcoUZKhyYI%2FVi4geHWB3%2FeLuq1Y9jE%2Bre7SxAza7EGBfuw%3D%3D HTTP/1.1" 200 0
+2021-10-18 09:06:26,470 INFO    Thread-17 :87199 [upload_job.py:push():112] Uploaded file wandb/run-20211018_090022-28y1uij2/files/config.yaml
+2021-10-18 09:06:26,477 DEBUG   Thread-18 :87199 [connectionpool.py:_make_request():452] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/ranuga-d/Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2/output.log?Expires=1634614585&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=sZg4IkA%2FTqEQfM%2FvOvhiGznNO4IlZMd%2FyPWbSkmCF6mIiIGPSiKPTzhwQOJXPb7iRhyJeNvp4PNzkrtSXu0P3QR4NGkgWUQf1Ht%2FtgRWR%2BmIAc1gl0HFNkGZTi1KBmzzmqXPJpOJH1JmoDyof3jViDZOG3Cibjyi3yLapV0EqnJ328OA3ikGikH7HhgYVoEVBnpcnYbX3C%2BveMWttgoGY64MjjAd7QfUHYSpFvJKF%2FKvNltCkfSmWbfdFHq3Kpsef%2FO3Q7SFKSWnMPKI1QHRHd5px6WrOLzuPlWUgvsZitsv65Bs8Dz2Y0YLfvFVloC5p6RqI56f63ttRg4qSgj1uQ%3D%3D HTTP/1.1" 200 0
+2021-10-18 09:06:26,479 INFO    Thread-18 :87199 [upload_job.py:push():112] Uploaded file wandb/run-20211018_090022-28y1uij2/files/output.log
+2021-10-18 09:06:27,140 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:27,140 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: poll_exit
+2021-10-18 09:06:27,140 DEBUG   SenderThread:87199 [sender.py:send():89] send: request
+2021-10-18 09:06:27,140 INFO    SenderThread:87199 [file_pusher.py:join():144] waiting for file pusher
+2021-10-18 09:06:27,143 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:27,143 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: get_summary
+2021-10-18 09:06:27,144 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:27,144 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: sampled_history
+2021-10-18 09:06:27,145 DEBUG   HandlerThread:87199 [handler.py:handle():47] handle: request
+2021-10-18 09:06:27,145 DEBUG   HandlerThread:87199 [handler.py:handle_request():56] handle_request: shutdown
+2021-10-18 09:06:27,145 INFO    HandlerThread:87199 [handler.py:finish():274] shutting down handler
+2021-10-18 09:06:27,456 INFO    WriterThread:87199 [datastore.py:close():257] close: wandb/run-20211018_090022-28y1uij2/run-28y1uij2.wandb
+2021-10-18 09:06:28,141 INFO    SenderThread:87199 [sender.py:finish():536] shutting down sender
+2021-10-18 09:06:28,141 INFO    SenderThread:87199 [file_pusher.py:finish():139] shutting down file pusher
+2021-10-18 09:06:28,141 INFO    SenderThread:87199 [file_pusher.py:join():144] waiting for file pusher
+2021-10-18 09:06:28,141 INFO    MainThread:87199 [internal.py:handle_exit():137] Internal process exited

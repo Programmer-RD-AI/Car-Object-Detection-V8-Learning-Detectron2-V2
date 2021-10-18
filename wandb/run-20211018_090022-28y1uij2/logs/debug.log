@@ -1,0 +1,34 @@
+2021-10-18 09:00:22,139 INFO    MainThread:87099 [wandb_init.py:_log_setup():307] Logging user logs to wandb/run-20211018_090022-28y1uij2/logs/debug.log
+2021-10-18 09:00:22,139 INFO    MainThread:87099 [wandb_init.py:_log_setup():308] Logging internal logs to wandb/run-20211018_090022-28y1uij2/logs/debug-internal.log
+2021-10-18 09:00:22,139 INFO    MainThread:87099 [wandb_setup.py:_flush():68] enabling code saving by default
+2021-10-18 09:00:22,139 INFO    MainThread:87099 [wandb_setup.py:_flush():68] setting env: {}
+2021-10-18 09:00:22,139 INFO    MainThread:87099 [wandb_setup.py:_flush():68] multiprocessing start_methods=fork,spawn,forkserver
+2021-10-18 09:00:22,139 WARNING MainThread:87099 [wandb_setup.py:_flush():68] Ignoring settings passed to wandb.setup() which has already been configured.
+2021-10-18 09:00:22,139 INFO    MainThread:87099 [wandb_setup.py:_flush():68] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f8ea52ebbb0>
+2021-10-18 09:00:22,163 WARNING MainThread:87099 [wandb_setup.py:__init__():213] Ignoring settings passed to wandb.setup() which has already been configured.
+2021-10-18 09:00:24,268 INFO    MainThread:87099 [wandb_run.py:_console_start():1103] atexit reg
+2021-10-18 09:00:24,269 INFO    MainThread:87099 [wandb_run.py:_redirect():978] redirect: SettingsConsole.WRAP
+2021-10-18 09:00:24,269 INFO    MainThread:87099 [wandb_run.py:_redirect():1009] Wrapping output streams.
+2021-10-18 09:00:24,269 INFO    MainThread:87099 [wandb_run.py:_redirect():1025] Redirects installed.
+2021-10-18 09:00:29,296 INFO    MainThread:87099 [wandb_init.py:_pause_backend():229] pausing backend
+2021-10-18 09:04:31,389 INFO    MainThread:87099 [wandb_init.py:_resume_backend():234] resuming backend
+2021-10-18 09:04:31,391 INFO    MainThread:87099 [wandb_init.py:_pause_backend():229] pausing backend
+2021-10-18 09:04:34,587 INFO    MainThread:87099 [wandb_init.py:_resume_backend():234] resuming backend
+2021-10-18 09:04:36,817 INFO    MainThread:87099 [wandb_init.py:_pause_backend():229] pausing backend
+2021-10-18 09:04:54,009 INFO    MainThread:87099 [wandb_init.py:_resume_backend():234] resuming backend
+2021-10-18 09:04:54,208 INFO    MainThread:87099 [wandb_init.py:_pause_backend():229] pausing backend
+2021-10-18 09:04:57,694 INFO    MainThread:87099 [wandb_init.py:_resume_backend():234] resuming backend
+2021-10-18 09:04:58,199 INFO    MainThread:87099 [wandb_init.py:_pause_backend():229] pausing backend
+2021-10-18 09:04:58,851 INFO    MainThread:87099 [wandb_init.py:_resume_backend():234] resuming backend
+2021-10-18 09:04:59,053 INFO    MainThread:87099 [wandb_init.py:_pause_backend():229] pausing backend
+2021-10-18 09:06:25,124 INFO    MainThread:87099 [wandb_init.py:_resume_backend():234] resuming backend
+2021-10-18 09:06:25,132 INFO    MainThread:87099 [wandb_init.py:_log_setup():307] Logging user logs to wandb/run-20211018_090625-106y76r3/logs/debug.log
+2021-10-18 09:06:25,132 INFO    MainThread:87099 [wandb_init.py:_log_setup():308] Logging internal logs to wandb/run-20211018_090625-106y76r3/logs/debug-internal.log
+2021-10-18 09:06:25,132 INFO    MainThread:87099 [wandb_setup.py:_flush():68] enabling code saving by default
+2021-10-18 09:06:25,132 INFO    MainThread:87099 [wandb_setup.py:_flush():68] setting env: {}
+2021-10-18 09:06:25,132 INFO    MainThread:87099 [wandb_setup.py:_flush():68] multiprocessing start_methods=fork,spawn,forkserver
+2021-10-18 09:06:25,132 WARNING MainThread:87099 [wandb_setup.py:_flush():68] Ignoring settings passed to wandb.setup() which has already been configured.
+2021-10-18 09:06:25,132 INFO    MainThread:87099 [wandb_setup.py:_flush():68] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f8ea52ebbb0>
+2021-10-18 09:06:25,132 INFO    MainThread:87099 [wandb_run.py:finish():864] finishing run Car-Object-Detection-V8-Learning-Detectron2-V2/28y1uij2
+2021-10-18 09:06:25,133 INFO    MainThread:87099 [wandb_init.py:_jupyter_teardown():239] cleaning up jupyter logic
+2021-10-18 09:06:25,133 INFO    MainThread:87099 [jupyter.py:save_history():200] not saving jupyter history
